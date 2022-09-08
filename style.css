@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+body {
+    overflow: scroll;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: url(img/img-2.png);
+    padding: 5.5rem;
+}
+
+section {
+    padding: 2rem 8%;
+    min-height: 100%;
+}
+
+
+.btn {
+    font-size: 2rem;
+    padding: 2rem 5rem;
+    background: rgba(63, 4, 4, 0.2);
+    color: rgb(76, 187, 202);
+    border-radius: 3rem;
+    box-shadow: 0 3rem 5rem rgba(185, 230, 72, 0.148);  
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, .5);
+    color: crimson;
+}
+
+.heading {
+    font-size: 4rem;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+}
+
+header {
+    width: 35rem;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+    backdrop-filter: blur(.4rem);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+header .user {
+    padding-top: 2rem;
+}
+
+header .user img {
+    margin: 1rem 0;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 0 1rem rgba(255, 255, 255, .2);
+}
+
+header .user .name {
+    font-size: 4rem;
+    color: white;
+    padding: 3rem 0;
+}
+
+header .user .post {
+    font-size: 2.8rem;
+    color: aliceblue;
+    font-weight: lighter;
+}
+
+header .navbar {
+    padding: 0.5rem 3.05rem;
+    max-height: 100vh;
+
+}
+
+header .navbar ul li {
+    margin: 1rem 0;
+    list-style: none;
+}
+
+header .navbar ul li a {
+    display: block;
+    padding: 1rem;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.915);
+    background: rgba(red, green, blue, alpha);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+    border-radius: 1rem;
+    transition: all .2s linear;
+}
+
+header .navbar ul li a:hover {
+    background: rgba(255, 255, 255, .5);
+    color: deeppink;
+    transition: none;
+}
+
+.container {
+    height: 75rem;
+    width: 100rem;
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+    backdrop-filter: blur(.4rem);
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.home {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    padding-bottom: 10rem;
+}
+
+.home h3 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: white;
+}
+
+.home .name span {
+    font-size: 4rem;
+    color: red;
+}
+
+.home .post {   
+    padding: 1rem 0;
+}
+
+.home .post span {
+    font-size: 3rem;
+    color: lightgreen;
+}
+
+.home .share {
+    position: absolute;
+    left: 50%;
+    bottom: 5rem;
+    transform: translateX(-50%);
+    display: flex;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: rgba(70, 68, 68, 0.649);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    transition: .2s linear;
+}
+
+.home .share a {
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+    padding: 1rem 2rem;
+    margin: 1rem;
+    color: blueviolet;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+.home .share a:hover {
+    background: crimson;
+    color: gray;
+}
+
+.about h1{
+    outline-style: double;
+    padding: 10px 100px;
+    border-radius: 50px 20px;
+    color: brown;
+    background-color: gray;
+}
+
+.about .content h3 {
+    font-size: 2.9rem;
+    color: white;
+    margin-top: 50px;
+}
+
+.about .content h3 span {
+    font-size: 4.5rem;
+    color: black;
+    margin-top: 25px;
+}
+
+.about .content p {
+    font-size: 2.5rem;
+    color: black;
+    padding: 5rem 0;
+}
+
+.about .buttons {
+    margin-top: 34px;
+}
+
+.about .buttons a{
+    font-size: 20px;
+    padding: 15px 50px;
+    border-radius: 25px;
+    color: black;
+    background-color: dodgerblue;
+    font-weight: bold;
+    margin: 0 120px;
+    cursor: pointer;
+    outline-style: groove;
+    cursor: pointer;
+}
+
+.about .buttons a:hover{
+    background: gray;
+    color: crimson;
+    transition: none;
+}
+
+.education h1{
+    outline-style: double;
+    padding: 10px 50px;
+    border-radius: 50px 20px;
+    color: brown;
+    background-color: gray;
+}
+
+
+.education .box-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.education .box-container .box {
+    width: 30rem;
+    padding: 0 2rem;
+    padding-bottom: 4rem;
+    border-left: .3rem solid white;
+}
+
+.education .box-container .box .year {
+    font-size: 3rem;
+    color: coral;
+    position: relative;
+}
+
+.education .box-container .box .year::before {
+    content: "";
+    position: absolute;
+    top: 3rem;
+    left: -3.5rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 30%;
+    background: white;
+}
+
+#education .box-container .box h3 {
+    font-size: 2.5rem;
+    color: burlywood;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+#education .box-container .box h2{
+    font-size: 1.90rem;
+    color: chartreuse;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+#education .box-container .box p {
+    font-size: 2rem;
+    color: black;
+    padding: 1rem 0;
+    text-transform: capitalize;
+}
+
+.skills h1{
+    outline-style: double;
+    padding: 10px 100px;
+    border-radius: 50px 10px;
+    background-color: gray;
+    color: brown;
+}
+
+.skills .comment h3 {
+    display: flex;
+    font-size: 3rem;
+    color: lightgreen;
+    justify-content: space-between;
+}
+
+.skills .comment p {
+    font-size: 2rem;
+    color: black;
+    padding: 1rem 0;
+    text-align: left;
+    text-decoration: solid;
+}
+
+.skills .skills {
+    padding: 2rem 0;
+}
+
+.skills .skills .progress {
+    margin: 1.5rem;
+    padding: 1rem;
+    box-shadow: 2rem 1rem rgba(0, 0, 0, .3);
+    background: rgba(255, 255, 255, .2);
+    border-radius: 2.5rem;
+}
+
+#skills .skills .progress h3 {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.skills .skills .progress .bar {
+    position: relative;
+    width: 70%;
+    height: .3rem;
+    margin: 1rem 1rem;
+    background: rgb(158, 156, 156);
+}
+
+.skills .skills .progress .bar span {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background: black;
+}
+
+.skills .skills .progress:nth-child(1) .bar span {
+    width: 70%;
+}
+
+.skills .skills .progress:nth-child(2) .bar span {
+    width: 75%;
+}
+
+.skills .skills .progress:nth-child(3) .bar span {
+    width: 60%;
+}
+
+.skills .skills .progress:nth-child(4) .bar span {
+    width: 70%;
+}
+
+.skills .skills .progress:nth-child(5) .bar span {
+    width: 60%;
+}
+
+.skills .skills .progress:nth-child(6) .bar span {
+    width: 50%;
+}
+
+.project {
+    min-height: 100%;
+}
+
+.project h1{
+    outline-style: double;
+    padding: 10px 50px;
+    border-radius: 50px 10px;
+    background-color: gray;
+    color: brown;
+}
+
+.project .box-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project .box-container .box {
+    margin: 1.5rem;
+    min-height: 25rem;
+    width: 39rem;
+    padding-top: 0.1rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-bottom: 0.1rem;
+    padding: 10px 10px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+    background: black;
+    border: solid orangered;
+    text-align:center;
+}
+
+.project .box-container .box h3{
+    display: flex;
+    font-size: 1.8rem;
+    color: cyan;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+}
+
+.project .box-container .box i {
+    color: aqua;
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+
+.project .box-container .box p {
+    color: white;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.project .box-container .box:hover {
+    background-color: gray;
+    background: crimson;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}
+
+.contact h1{
+    outline-style: double;
+    padding: 10px 50px;
+    border-radius: 50px 10px;
+    background-color: gray;
+    color: brown;
+}
+.contact .row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7rem;
+    align-items: center;
+}
+
+.contact .row form {
+    border-radius: 2.05rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    background: rgba(189, 184, 184, 0.2);
+    box-shadow: gray;
+}
+
+.contact .row form .box {
+    background: burlywood;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    padding: 0 1rem;
+    width: 49%;
+    height: 4rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: crimson;
+    border: solid orange;
+    text-transform: none;
+}
+
+.contact .row form .box::placeholder {
+    text-transform: capitalize;
+    color: #eee;
+}
+
+#contact .row form .message {
+    padding: 1rem;
+    height: 25rem;
+    resize: none;
+    width: 80%;
+}
+
+.contact .row form .btn {
+    margin-bottom: 1rem;
+}
+
+.contact .row .content h2 {
+    font-size: 2.3rem;
+    display: flex;
+    justify-content: space-around;
+    color: blue;
+}
+
+.contact .row .content p {
+    font-size: 2.1rem;
+    padding: 1.5rem;
+    text-align: left;
+    color: black;
+}
+
+.contact .row .content {
+    padding: 0 5rem;
+}
+
+.contact .row .content .icons {
+    padding: 1rem 0;
+}
+
+#contact .row .content .icons h3 {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: white;
+    display: flex;
+}
+
+#contact .row .content .icons h3 i {
+    padding-right: .5rem;
+}
+
+.contact .row .content .icons p {
+    font-size: 1.9rem;
+    color: black;
+    line-height: 0.50;
+    white-space: nowrap;
+}
